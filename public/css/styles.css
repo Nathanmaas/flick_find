@@ -1,0 +1,27 @@
+body{
+  background-image: url("http://fbfiles.alphacoders.com/853/8533.jpg");
+  background-size; cover;
+  height: 780px;
+  background-color: rgba(300, 300, 300, .9);
+  background-blend-mode: color;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ }
+
+#search-wrapper{
+width: 600px;
+}
+
+#action{
+  background-image: url("http://thumbs.dreamstime.com/t/movie-clapper-board-illustration-text-40602977.jpg");
+  height: 34px;
+  width: 70px;
+  background-size; cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
