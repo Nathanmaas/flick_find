@@ -1,13 +1,15 @@
 <br><div class="well">
-  <h1><%= description.Title %> </h1>
-  <p>Description: </p><%= description.Plot %><p>
-  <p>Rating: </p>
-  <% for (var i = 0; i < rating; i++) { %>
+<h1> <%= description.Title %> </h1>
+
+  <b>Description: </b><%= description.Plot %><p>
+
+  <b>Rating: </b><% for (var i = 0; i < rating; i++) { %>
     <b><img src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/star-32.png">
     </b>
   <%  }; %><br>
   <b>rotten tomatoes rating: </b><%= description.tomatoRating %><img src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/star-32.png"><p>
-  <b>tomatoe meter: </b><%= description.tomatoMeter %><p>
-  <p>critic consensus: </p><%= description.tomatoConsensus %><p>
+  <b>tomato meter: </b><%= description.tomatoMeter %><p>
+  <b>critic consensus:</b></p><%= description.tomatoConsensus %><p><br>
+  <button class="btn btn-info"><a href="/favorites">Add to Favorites+</a></button><br></br>
 </div>
 

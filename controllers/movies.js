@@ -13,11 +13,6 @@ function Movie(title, year, id){
 var movies = [];
 
 
-router.get("/", function(req, res){
-  res.render('movies/index.ejs');
-})
-
-
 router.get("/results", function(req, res){
   //res.render("results")
   var title = req.query.t
