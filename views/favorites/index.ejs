@@ -1,8 +1,12 @@
-<% favs.forEach(function(favs){ %>
+<% favorites.forEach(function(favorites){ %>
 <div class="well">
-<a href="show/<%= result.imdbID %>">
-  <b>Title: </b><%= result.Title %><br> </a>
-  <b>Year: </b><%= result.Year %><br>
+  <form method="POST" action="/favorites/<%= favorites.id %>">
+    <button type="submit" class="btn pull-right btn-danger glyphicon glyphicon-trash"></button>
+  </form>
+  <div class="stilltostyle">
+  <a href="movies/show/<%= favorites.imdbID %>">
+    <b>Title: </b><%= favorites.Title %><br></a>
+    <b>Year: </b><%= favorites.Year %><br>
+  </div>
 </div>
-
 <% }); %>

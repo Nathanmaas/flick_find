@@ -10,6 +10,16 @@
   <b>rotten tomatoes rating: </b><%= description.tomatoRating %><img src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/star-32.png"><p>
   <b>tomato meter: </b><%= description.tomatoMeter %><p>
   <b>critic consensus:</b></p><%= description.tomatoConsensus %><p><br>
-  <button class="btn btn-info"><a href="/favorites">Add to Favorites+</a></button><br></br>
+<!--   < if(favorite) { %> -->
+  <!-- <b>This movie is in your favorites</b> -->
+ <!--  < } else { %> -->
+  <form method="POST" action="/favorites">
+  <input type="hidden" name="imdbID" value="<%= description.imdbID %>">
+  <input type="hidden" name="Title" value="<%= description.Title %>">
+  <input type="hidden" name="Poster" value="<%= description.Poster %>">
+  <input type="hidden" name="Year" value="<%= description.Year %>">
+  <button type="submit" class="btn btn-info">Add to Favorites+</button><br></br>
+  </form>
+ <!--  < } %> -->
 </div>
 
